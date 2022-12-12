@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TicTacToeFramework"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of TicTacToeFramework."
+  spec.summary      = "Realization of TicTacToe game."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,22 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+Realization of TicTacToe game.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/TicTacToeFramework"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See https://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
+  spec.homepage     = "https://github.com/Daria-Shevchenko/TicTacToeFramework"
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -53,25 +41,12 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "Daria Shevchenko" => "dasha@droneharmony.com" }
-  # Or just: spec.author    = "Daria Shevchenko"
-  # spec.authors            = { "Daria Shevchenko" => "dasha@droneharmony.com" }
-  # spec.social_media_url   = "https://twitter.com/Daria Shevchenko"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
+  
+    spec.platform     = :ios, "16.0"
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-
+    spec.ios.deployment_target = "16.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -79,7 +54,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/TicTacToeFramework.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Daria-Shevchenko/TicTacToeFramework", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +65,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "TicTacToeFramework/**/*.{h,m}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
